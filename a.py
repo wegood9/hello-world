@@ -16,7 +16,7 @@ resp = session.get('http://v2ex.com/signin')
 u, p = re.findall(r'class="sl" name="([0-9A-Za-z]{64})"', resp.text)
 once_code = re.search(r'value="(\d+)" name="once"', resp.text).group(1)
 
-resp = session.post('http://v2ex.com/signin', {u:'1234rty', p:'v2exwegood0**', 'once':once_code, 'next':'/'})
+resp = session.post('http://v2ex.com/signin', {u:'username', p:'password', 'once':once_code, 'next':'/'})
 resp = session.get('http://v2ex.com/mission/daily')
 
 if u'每日登录奖励已领取' in resp.text:
