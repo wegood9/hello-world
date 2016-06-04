@@ -9,7 +9,7 @@ service iptables save
 二, 安装命令:
 
 rm -f install_fs.sh
-wget  https://github.com/dupontjoy/customization/raw/master/Rules/Shadowsocks/Finalspeed/install_fs.sh
+wget  https://github.com/wegood9/hello-world/blob/master/finalspeed/install_fs.sh
 chmod +x install_fs.sh
 ./install_fs.sh 2>&1 | tee install.log
 
